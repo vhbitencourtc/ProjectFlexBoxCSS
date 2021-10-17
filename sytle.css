@@ -1,0 +1,223 @@
+/*Style Root*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul li a {
+  text-decoration: none;
+}
+div img {
+  display: block;
+  width: 100%;
+}
+.flex-container {
+  display: flex;
+  max-width: 992px;
+  margin: auto;
+  width: 100%;
+  min-width: 320px;
+  padding: 10px 15px;
+}
+header {
+  background-color: #423f52;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+header .list-items {
+  display: flex;
+  max-width: 260px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-items li a {
+  color: white;
+}
+/*Estilo dos Menus da Barra Principal*/
+header .menu {
+  justify-content: space-between;
+}
+/*#text-menu {
+  color: white;
+  text-align: left;
+}*/
+
+/*Estilo do Flex Home*/
+.home {
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+}
+.text-home h1 {
+  color: #423f52;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+/*Estilo do Botão Saiba Mais*/
+.text-home a {
+  background-color: #423f52;
+  color: white;
+  text-align: center;
+  border-radius: 30px;
+  width: 220px;
+  display: block;
+  text-decoration: none;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#history {
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+#history h2 {
+  font-size: 32px;
+  color: #423f52;
+  display: flex;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+/*Adicionando o detalhe em History*/
+#history h2::before {
+  content: '';
+  height: 50px;
+  width: 5px;
+  margin-right: 5px;
+  background-color: #423f52;
+  position: relative;
+}
+#history p {
+  margin-bottom: 10px;
+  width: 90%;
+  padding: 20px;
+}
+#history img {
+  min-width: 420px;
+}
+#container-ex {
+  background-color: #423f52;
+  width: 100%;
+}
+#stock {
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+#stock h2 {
+  color: #423f52;
+  font-size: 32px;
+  margin-bottom: 20px;
+  display: flex;
+}
+/*Adicionando o detalhe em Stock*/
+#stock h2::before {
+  content: '';
+  height: 50px;
+  width: 5px;
+  margin-right: 5px;
+  background-color: #423f52;
+  position: relative;
+}
+.list-stock {
+  display: flex;
+  justify-content: space-between;
+}
+.list-stock .item-stock {
+  text-align: center;
+}
+/*Estilo dos Botões Adquira já*/
+.item-stock a {
+  width: 220px;
+  background-color: #423f52;
+  color: white;
+  border-radius: 30px;
+  height: 50px;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 50px;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+.item-stock p {
+  font-weight: bold;
+  font-size: 20px;
+}
+.item-stock img {
+  width: 80%;
+  margin: auto;
+}
+/*Estilo na Seção Contato*/
+#contact h2 {
+  color: #423f52;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+/*Estilo dos Contatos*/
+#contact ul li {
+  margin-bottom: 10px;
+  color: #423f52;
+  font-weight: bold;
+}
+/*Estilo do Botão WhatsApp*/
+#contact a {
+  background-color: #423f52;
+  color: white;
+  text-align: center;
+  border-radius: 30px;
+  width: 220px;
+  display: block;
+  text-decoration: none;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+footer {
+  background-color: #423f52;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+footer .footer {
+  justify-content: space-between;
+  color: white;
+}
+/*Responsive*/
+@media (max-width: 992px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .home {
+    flex-direction: column-reverse;
+  }
+  .home .text-home {
+    width: 100%;
+  }
+  #history {
+    flex-direction: column-reverse;
+  }
+  .list-stock {
+    flex-direction: column-reverse;
+  }
+  .item-stock img {
+    width: 50%;
+    margin: auto;
+  }
+  .list-contact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
